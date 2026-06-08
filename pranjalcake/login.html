@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cake Shop Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ffdde1, #ee9ca7);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .login-box {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            width: 320px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+            text-align: center;
+        }
+
+        h2 {
+            color: #d6336c;
+        }
+
+        input {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .password-container {
+            position: relative;
+        }
+
+        .toggle {
+            position: absolute;
+            right: 15px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 14px;
+            color: #d6336c;
+        }
+
+        button {
+            background: #d6336c;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 100%;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #b02555;
+        }
+
+        .error {
+            color: red;
+            font-size: 14px;
+        }
+
+        .success {
+            color: green;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="login-box">
+    <h2>🍰 Cake Shop Login</h2>
+    
+    <input type="text" id="username" placeholder="Enter Username">
+    
+    <div class="password-container">
+        <input type="password" id="password" placeholder="Enter Password">
+        <span class="toggle" onclick="togglePassword()">Show</span>
+    </div>
+    
+    <button onclick="validateLogin()">Login</button>
+    
+    <p id="message"></p>
+</div>
+
+<script>
+    function togglePassword() {
+        let passField = document.getElementById("password");
+        let toggleText = document.querySelector(".toggle");
+
+        if (passField.type === "password") {
+            passField.type = "text";
+            toggleText.innerText = "Hide";
+        } else {
+            passField.type = "password";
+            toggleText.innerText = "Show";
+        }
+    }
+
+    function validateLogin() {
+        let user = document.getElementById("username").value;
+        let pass = document.getElementById("password").value;
+        let message = document.getElementById("message");
+
+        let correctUser = "p@ri";
+        let correctPass = "22142214";
+
+        if (user === "" || pass === "") {
+            message.innerHTML = "⚠ Please fill all fields";
+            message.className = "error";
+        }
+        else if (user === correctUser && pass === correctPass) {
+            message.innerHTML = "✅ Login Successful!";
+            message.className = "success";
+
+            // 🔥 REDIRECT TO NEXT PAGE
+            setTimeout(function() {
+                window.location.href = "home.html";
+            }, 1000);
+        }
+        else {
+            message.innerHTML = "❌ Invalid Username or Password";
+            message.className = "error";
+        }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,15 @@
+.order{
+    display : inline-block
+}
+
+#image{
+    height: 50%;
+    width:50%;
+    background-color: aqua;
+}
+
+#imformation{
+    height: 50%;
+    width:50%;
+    background-color: blueviolet;
+}

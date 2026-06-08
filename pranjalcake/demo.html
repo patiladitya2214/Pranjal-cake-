@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Our Products</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-color:#FFF4E6;
+}
+
+/* Header */
+header{
+    background-color:#7B1E3A;
+    color:white;
+    padding:20px;
+    text-align:center;
+}
+
+/* Grid Layout */
+.products{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap:25px;
+    padding:40px;
+}
+
+/* Card Design */
+.card{
+    background-color:#FFFFFF;
+    border-radius:10px;
+    box-shadow:0 4px 8px rgba(0,0,0,0.2);
+    text-align:center;
+    padding:15px;
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:scale(1.05);
+}
+
+/* Image */
+.card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    border-radius:10px;
+}
+
+/* Title */
+.card h3{
+    margin:10px 0;
+    font-size:18px;
+}
+
+/* Price */
+.price{
+    color:#7B1E3A;
+    font-weight:bold;
+}
+
+/* Button */
+.btn{
+    background-color:#D4AF37;
+    color:white;
+    padding:8px 15px;
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+.btn:hover{
+    background-color:#3A0D0D;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Our Cake Collection</h1>
+</header>
+
+<section class="products">
+
+    <!-- 15 Product Cards -->
+
+    <!-- Repeat this block 15 times -->
+    
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 1">
+        <h3>Chocolate Cake</h3>
+        <p class="price">₹500</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 2">
+        <h3>Strawberry Cake</h3>
+        <p class="price">₹600</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 3">
+        <h3>Vanilla Cake</h3>
+        <p class="price">₹450</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 4">
+        <h3>Black Forest</h3>
+        <p class="price">₹700</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 5">
+        <h3>Red Velvet</h3>
+        <p class="price">₹750</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 6">
+        <h3>Butterscotch</h3>
+        <p class="price">₹550</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 7">
+        <h3>Pineapple Cake</h3>
+        <p class="price">₹500</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 8">
+        <h3>Fruit Cake</h3>
+        <p class="price">₹650</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 9">
+        <h3>KitKat Cake</h3>
+        <p class="price">₹800</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 10">
+        <h3>Oreo Cake</h3>
+        <p class="price">₹780</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 11">
+        <h3>Truffle Cake</h3>
+        <p class="price">₹850</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 12">
+        <h3>Designer Cake</h3>
+        <p class="price">₹1200</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 13">
+        <h3>Birthday Cake</h3>
+        <p class="price">₹900</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 14">
+        <h3>Anniversary Cake</h3>
+        <p class="price">₹1000</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+    <div class="card">
+        <img src="https://via.placeholder.com/300x200" alt="Cake 15">
+        <h3>Custom Theme Cake</h3>
+        <p class="price">₹1500</p>
+        <button class="btn">Order Now</button>
+    </div>
+
+</section>
+
+</body>
+</html>

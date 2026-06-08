@@ -1,0 +1,152 @@
+* {
+    text-align: center;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    
+}
+
+header {
+    margin: 0px;
+    font-family: Arial;
+    border: border-box;
+    top: 0px;
+    position: sticky;  
+    background-color: white;
+
+}
+
+.logo {
+    font-weight: bold;
+}
+
+.navbar {
+    position: sticky;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.navbar a:hover {
+    font-size: 1.3rem;
+}
+
+
+
+.about_us{
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(237, 246, 244);
+} 
+#image_about_us{
+  background-color: rgb(237, 246, 244);
+  text-align: center;
+}
+
+h1{
+ 
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #edb457;  
+  letter-spacing: 0.5px;
+}
+p
+{
+  font-size: 17.8px;
+  font-family: 'Times New Roman', Times, serif;
+  width: 50%;
+  padding: 10px 340px 10px 340px;
+  text-align: center;}
+
+
+h1{
+ 
+  font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #edb457;  
+  letter-spacing: 0.5px;
+}
+h4{
+  color: #B37E01;
+}
+section a{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin-right:50px;
+  margin-left:50px ;
+  margin-top: 50px;  
+}
+
+ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* instead of space-evenly */
+    height: auto;
+}
+
+
+
+
+.foot{
+  height: 150px;
+ 
+}
+
+#box1{
+  display: flex;
+  text-align: left;
+}
+
+#quick_link,
+#Contact_us,
+#Follow_us{
+  width:34%;
+  height:200px;
+  margin-left: 100px;
+  margin-top: 20px;
+}
+
+
+footer,
+footer *,
+.foot,
+#box1 {
+  background-color: brown;
+   text-align:left;
+   color:rgb(0, 0, 0);
+   
+}
+
+
+ul , a{
+  list-style-type: none;
+  text-align:left;
+  margin-top: 20px;
+}
+
+.cr{
+  text-align: center;
+}
+
+
+
+li:hover{
+  font-size: 1.3rem;
+}
+
+i:hover{
+  font-size: 1.3rem;
+}

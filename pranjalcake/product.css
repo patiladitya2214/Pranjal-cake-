@@ -1,0 +1,104 @@
+body{
+    background-color: #FFFAF3;
+}
+header{
+    background-color:white;
+}
+
+.sname{
+    margin-top:20px;
+    color:#7B1E3A;
+    font-size: 1.5rem;
+    height:100px;
+}
+
+.order {
+    padding-top: 60px;
+    font-size: 1.5rem;
+    background-color: rgb(255, 247, 237);;
+    padding-bottom: 20px;
+}
+
+.order h1,
+p {
+    color: #800000;
+}
+
+.shop-btn {
+    width: 170px;
+    height: 35px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #800000;
+}
+
+.shop-btn a {
+    color: white;
+}
+
+.shop-btn:hover {
+    background-color: #3d0101;
+}
+
+
+.products {
+    color:rgb(60, 10, 10);
+    font-size: 25px;
+    padding: 10px 10px 40px 10px;
+    background-color: rgb(246, 242, 230);
+}
+
+.productsImage {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.products #box {
+    height: 350px;
+    width: 270px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.5);
+    display: inline-block;
+    border-radius: 15px;
+    overflow: hidden;
+    font-size:23px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+}
+.product #box b{
+    font-size:20px;
+}
+
+.products img {
+    height: 230px;
+    width: 270px;
+    transition: transform 0.4s ease;  
+}
+
+
+.products h3 {
+    bottom: 0%;
+}
+
+#box .shop{
+    margin-top: 10px;
+    height: 25px;
+    width:120px;
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: #800000;
+}
+#box .shop:hover{
+    background-color: #3d0101;
+    color:#FFFAF3;
+}
+
+.products #box:hover {
+    transform: translateY(-15px);
+    box-shadow: 0px 12px 15px rgba(0, 0, 0, 0.3);
+}
+
+.products #box:hover img {
+    transform: scale(1.05);
+}
